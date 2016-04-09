@@ -68,6 +68,8 @@ struct _stDS4EmitData{
 // ***************************************************************************
 // Declarations
 // ***************************************************************************
+int hid_output_to_ds4_test( void );
+int emit_data( struct _stDS4EmitData* pstEmitData );
 
 // ***************************************************************************
 // Variables
@@ -92,10 +94,6 @@ const char g_base_data_buffer[ HID_OUTPUT_TEST_DS4_DATA_SIZE ] = {
 // ***************************************************************************
 // Functions
 // ***************************************************************************
-
-int hid_output_to_ds4_test( void );
-int emit_data( struct _stDS4EmitData* pstEmitData );
-
 // Test Sequence.
 int hid_output_to_ds4_test( void ){
     struct _stDS4EmitData stEmitData;
